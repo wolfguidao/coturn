@@ -76,6 +76,9 @@ extern "C" {
 #define BUFFEREVENT_MAX_UDP_TO_TCP_WRITE (64 << 9)
 #define BUFFEREVENT_MAX_TCP_TO_TCP_WRITE (192 << 10)
 
+typedef unsigned char recv_ttl_t;
+typedef unsigned char recv_tos_t;
+
 typedef struct _stun_buffer_list_elem {
   struct _stun_buffer_list_elem *next;
   stun_buffer buf;
